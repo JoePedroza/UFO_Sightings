@@ -8,17 +8,18 @@
           crossorigin="anonymous">
      <link rel="stylesheet"
            href="static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <title>UFO Sightings</title>
 </head>
-<body>
+<body class="bg-dark">
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
 
     <div class="jumbotron">
-        <h1> The Truth Is Out There</h1>
+        <h1 class="display-4"> The Truth Is Out There</h1>
     </div>
 
     <div class="container-fluid">
@@ -43,18 +44,33 @@
         <br>
         <div class="row">
             <div class="col-md-3">
-                <form>
-                    <p>Filter the Search</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <label for="date">Enter Date:</label>
+                <form class="bg-dark">
+                    <p>Filter Search</p>
+                    <ul class="list-group bg-dark">
+                        <li class="list-group">
+                            <label for="datetime">Enter Date:</label>
                             <input type="text" placeholder="1/10/2010" id="datetime">
                         </li>
-                        <li class="list-group-item">
-                            <button id="filter-btn" type="button" class="btn btn-default">
-                                Filter Table
-                            </button>
+                        <li class="list-group">
+                            <label for="city">Enter a City</label>
+                            <input type="text" name="city" id="city" placeholder="roswell">
                         </li>
+                        <br>
+                        <li class="list-group">
+                            <label for="state">Enter a State</label>
+                            <input type="text" name="state" id="state" placeholder="ca">
+                        </li>
+                        <br>
+                        <li class="list-group">
+                            <label for="country">Enter a Country</label>
+                            <input type="text" name="country" id="country" placeholder="us">
+                        </li>
+                        <br>
+                        <li class="list-group">
+                            <label for="shape">Enter a Shape</label>
+                            <input type="text" name="shape" id="shape" placeholder="circle">
+                        </li>
+                        <br>
                     </ul>
 
                 </form>
@@ -72,28 +88,16 @@
                         <th>Comments</th>
                     </tr>
                     </thead>
+                    <tbody></tbody>
                 </table>
             </div>
         </div>
 
     </div>
-<!--    <div class="jumbotron">-->
-<!--        <h1>Page Header: The Truth is out there</h1>-->
-<!--    </div>-->
-<!--    <div class="article">-->
-<!--        <h2>Article Title: UFO Sightings: Fact or Fancy? Ufologist weigh in</h2>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--        <table>-->
-<!--            <thead>-->
-<!--            <tr></tr>-->
-<!--            <tr></tr>-->
-<!--            <tr></tr>-->
-<!--            </thead>-->
-<!--        </table>-->
-<!--    </div>-->
-<!--    <script src="https://d3js.org/d3.v6.min.js"></script>-->
-<!--    <script src="static/js/app.js"></script>-->
-<!--    <script src="static/js/data.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+
 </body>
 </html>
