@@ -1,13 +1,13 @@
 // Import data from the data.js
 const tableData = data
-let tbody = d3.select('tbody')
+let tbody = d3.select("tbody");
 
 function buildTable(data){
     // clear out existing data
     tbody.html("");
     // Loop through each object in the data
     // append rows and cells for each value in the row
-    data.forEach((dataRow )=> {
+    data.forEach((dataRow)=> {
         let row = tbody.append('tr');
 
         // Loop through each field in the dataRow and add
@@ -27,7 +27,7 @@ function  handleClick(){
     if (date){
         // Apply `filter` to the table data to only keep the
         // rows where the `datetime` value matches the filter value
-        filteredData = filteredData.filter(row => row.dateTime === date);
+        filteredData = filteredData.filter(row => row.datetime === date);
     }
     // Rebuild the table using the filtered data
     buildTable(filteredData);
@@ -37,10 +37,4 @@ function  handleClick(){
 d3.selectAll('#filter-btn').on('click', handleClick);
 
 // Build the table when the page loads
-buildTable(tableData)
-// d3.select('body').append('p').text('Welcome');
-// d3.select('body').append('tbody').text('Manny')
-// d3.select('body').append('tbody').text('Inwang')
-// Converted to an arrow function
-// addition = (a, b) => a + b;  arrow functions
-// d3.select('body').append('thead').append('tr').text('Name').append('tr').text('Age')
+buildTable(tableData);
