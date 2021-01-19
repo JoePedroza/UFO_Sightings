@@ -22,13 +22,13 @@ To perform a search there are five different criteria to choose from, below are 
 
 Input the criteria you are looking for. In the image below we are searching for the sightings in Oregon (or) and kept all other criteria constant.
 
-![](static\images\search-criteria.png)
+![](./static/images/search-criteria.png)
 
 #### Step 2
 
 Press the Enter key after inputting the criteria and a list of results will show up as shown in the image below.
 
-![](static\images\search-criteria-results.png)
+![](./static/images/search-criteria-results.png)
 
 
 
